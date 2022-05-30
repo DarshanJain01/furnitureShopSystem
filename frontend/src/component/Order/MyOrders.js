@@ -93,6 +93,8 @@ const MyOrders = () => {
         <Loader />
       ) : (
         <div className="myOrdersPage">
+                    <Typography id="myOrdersHeading">{user.name}'s Orders</Typography>
+
           <DataGrid
             rows={rows}
             columns={columns}
@@ -101,8 +103,6 @@ const MyOrders = () => {
             className="myOrdersTable"
             autoHeight
           />
-
-          <Typography id="myOrdersHeading">{user.name}'s Orders</Typography>
         </div>
       )}
     </Fragment>
